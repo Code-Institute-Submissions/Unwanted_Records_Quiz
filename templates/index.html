@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1 hidden-sm">
+          <!-- Empty for styling purposes -->
+        </div>
+        <div class="col-md-10 col-sm-12">
+              <h2>The records they'd rather we forget about</h2>
+              <p>Consider yourself a bit of a boffin when it comes to Premier League trivia? There are many football fans who could tell you off the top of their head which team has the longest unbeaten run in 
+                 Premier League history (Arsenal), or who holds the record for the most Premier League golden boots (Thierry Henry, of Arsenal).
+              </p> 
+              <p>But what about the less desirable accomplishments that the players, managers and fans would rather keep under wraps? 
+                 Put your Premier League trivia knowledge to the test as we quiz you on some of the most obscure and unwanted records in the history of the Premier League.
+              </p>
+              <p>Create a user name below to find out where your score ranks amongst other players and see if you can top our leaderboard.</p>
+        </div>
+        <div class="col-md-1 hidden-sm">
+          <!-- Empty for styling purposes -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hidden-sm">
+          <!-- Empty for styling purposes -->
+        </div>
+        <br>
+        <div class="col-md-10 col-sm-12">
+              <div class="d-flex justify-content-center">
+                <form method="POST">
+                  <label for="username">Username:</label>
+                  <input type="text" name="username">
+                  <button type="button" class="btn btn-primary">Begin the quiz</button>
+                </form>
+              </div>
+        </div>
+        <div class="col-md-1 hidden-sm">
+          <!-- Empty for styling purposes -->
+        </div>
+      </div>
+    </div>
+{% endblock %}
