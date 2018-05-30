@@ -2,40 +2,28 @@
 {% block content %}
     <div class="container">
       <div class="row">
-        <div class="col-md-1 hidden-sm">
+        <div class="col-lg-3 col-md-2 hidden-sm" id="sideimage">
           <!-- Empty for styling purposes -->
         </div>
-        <div class="col-md-10 col-sm-12">
-              <h2>The records they'd rather we forget about</h2>
-              <p>Consider yourself a bit of a boffin when it comes to Premier League trivia? There are many football fans who could tell you off the top of their head which team has the longest unbeaten run in 
-                 Premier League history (Arsenal), or who holds the record for the most Premier League golden boots (Thierry Henry, of Arsenal).
-              </p> 
-              <p>But what about the less desirable accomplishments that the players, managers and fans would rather keep under wraps? 
-                 Put your Premier League trivia knowledge to the test as we quiz you on some of the most obscure and unwanted records in the history of the Premier League.
-              </p>
-              <p>Create a user name below to find out where your score ranks amongst other players and see if you can top our leaderboard.</p>
-        </div>
-        <div class="col-md-1 hidden-sm">
-          <!-- Empty for styling purposes -->
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-1 hidden-sm">
-          <!-- Empty for styling purposes -->
-        </div>
-        <br>
-        <div class="col-md-10 col-sm-12">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+              <br>
+              <h3><center>{{ page_title }}</center></h3>
+              <p><center>Consider yourself a bit of a boffin when it comes to Premier League trivia? There are many football fans who could tell you off the top of their head which team has the longest unbeaten run in 
+                 Premier League history (Arsenal), or who holds the record for the most Premier League golden boots (Thierry Henry, of Arsenal).</center></p> 
+              <p><center>But what about the less desirable accomplishments that the players, managers and fans would rather keep under wraps? 
+                 Put your Premier League trivia knowledge to the test as we quiz you on some of the most obscure and unwanted records in the history of the Premier League.</center></p>
+              <p><center>Create a user name below to take the quiz and find out where your score ranks amongst other players and see if you can top our leaderboard.</center></p>
+              <br>
               <div class="d-flex justify-content-center">
                 <form method="POST">
                   <label for="username">Username:</label>
-                  <input type="text" name="username">
-                  <button type="button" class="btn btn-primary">Begin the quiz</button>
+                  <input type="text" id="username" name="username">
+                  <button type="submit" class="btn btn-primary">Take the quiz</button>
                 </form>
               </div>
         </div>
-        <div class="col-md-1 hidden-sm">
+        <div class="col-lg-3 col-md-2 hidden-sm" id="sideimage">
           <!-- Empty for styling purposes -->
         </div>
       </div>
-    </div>
 {% endblock %}

@@ -1,13 +1,36 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-10 mx-auto">
-              <h2>Let's begin</h2>
-              <p>Praesent dui sapien, posuere ac risus quis, efficitur viverra nibh. Maecenas eleifend rutrum nisi, sit amet condimentum turpis. Nunc congue eu elit in vehicula. Donec quis volutpat metus. 
-                 Nam pulvinar mauris vitae ligula suscipit, ut elementum purus malesuada.
-              </p>
+        <div class="col-lg-3 col-md-2 hidden-sm" id="sideimage">
+          <!-- Empty for styling purposes -->
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-12">
+              <br>
+              <div class="prompt">
+                <h3><center>{{ display_question }}</center></h3>
+              </div>
+              <br>
+              <center><button type="button" class="btn btn-info" id="options-btn">Reveal options</button></center>
+              <div class="options" id="reveal-options">
+                <center><ul style="list-style-type:none">
+                {% for option in display_options %}
+                <li>{{ option }}</li>
+                {% endfor %}
+                </ul></center>
+              </div>
+              <br>
+              <div class="d-flex justify-content-center">
+                <form method="POST">
+                  <label for="guess">Answer:</label>
+                  <input type="text" id="guess" name="guess" required/>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <br>
+        </div>
+        <div class="col-lg-3 col-md-2 hidden-sm" id="sideimage">
+          <!-- Empty for styling purposes -->
         </div>
       </div>
-    </div>
 {% endblock %}

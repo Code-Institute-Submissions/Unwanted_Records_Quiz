@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 hidden-sm">
+          <!-- Empty for styling purposes -->
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <div class="thanks">
+            <h2><center>Thanks for playing</center></23>
+          </div>
+          <br>
+          <div class="score">
+            <h4><center>{{ display_score }}</center></h4>
+          </div>
+          <br>
+        </div>
+        <div class="col-md-2 hidden-sm">
+          <!-- Empty for styling purposes -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 hidden-sm">
+          <!-- Empty for styling purposes -->
+        </div>
+        <br>
+        <div class="col-md-8 col-sm-12">
+              <div class="d-flex justify-content-center">
+                <form method="POST">
+                  <button type="submit" class="btn btn-primary">Leaderboard</button>
+                </form>
+              </div>
+        </div>
+        <div class="col-md-2 hidden-sm">
+          <!-- Empty for styling purposes -->
+        </div>
+      </div>
+    </div>
+{% endblock %}

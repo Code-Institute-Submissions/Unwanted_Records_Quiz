@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto">
+              <div class="table-responsive">
+                <center>
+                  <table class="leaderboard" id="scores" style="width:75%">
+                  <tr>
+                    <th>Score</th>
+                    <th>Username</th>
+                  </tr>
+                  {% for scores in userscores %}
+                  <tr>
+                    <td>
+                      {{ scores[0] }}
+                    </td>
+                    <td>
+                      {{ scores[1] }}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </table>
+                </center>
+              </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

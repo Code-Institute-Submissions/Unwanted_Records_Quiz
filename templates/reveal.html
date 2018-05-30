@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-2 hidden-sm" id="sideimage">
+          <!-- Empty for styling purposes -->
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-12">
+          <br>
+              <div class="answer" >
+                <h3><center>{{ display_answer.title() }}</center></h3>
+              </div>
+              <br>
+              <div class="reveal">
+                <h4><center>{{ display_reveal }}</center></h4>
+              </div>
+              <br>
+              <div class="d-flex justify-content-center">
+                <form method="POST">
+                  <button type="submit" class="btn btn-primary">Next question</button>
+                </form>
+              </div>
+            <br>
+        </div>
+        <div class="col-lg-3 col-md-2 hidden-sm" id="sideimage">
+          <!-- Empty for styling purposes -->
+        </div>
+      </div>
+    </div>
+{% endblock %}
