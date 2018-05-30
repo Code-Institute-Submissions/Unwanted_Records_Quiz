@@ -1,8 +1,8 @@
 # Unwanted Premier League records quiz
 
-## This is a football trivia quiz, developed within the Flask framework using Python.
-## It allows the user to enter a username, before asking them 15 multiple choice questions.
-## The quiz contains a function which counts the user's score, before displaying it on a leaderboard upon completion of the quiz.
+### This is a football trivia quiz, developed within the Flask framework using Python.
+### It allows the user to enter a username, before asking them 15 multiple choice questions.
+### The quiz contains a function which counts the user's score, before displaying it on a leaderboard upon completion of the quiz.
 
 ## Technologies used
 
