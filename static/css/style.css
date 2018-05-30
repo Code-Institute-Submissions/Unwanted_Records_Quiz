@@ -1,0 +1,139 @@
+/* style.css */
+body {
+  background-color: #112d5b;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e2e2e2;
+  font-family: 'Archivo', sans-serif;
+  }
+h3 {
+  font-weight: 900;
+  font-family: 'Archivo', sans-serif;
+  text-align: center;
+  }
+#input{
+  -webkit-align-self: center;
+  align-self: center;
+  align-items: center;
+  }
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  font-family: 'Archivo', sans-serif;
+  }
+.btn-primary {
+  background-color: #009933;
+  border-color: #009933;
+  margin-top: 5px;
+  }
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+  color: #e2e2e2;
+  background-color: #336600 !important;
+  border-color: #336600 !important;
+  }
+.sticky-container{
+  padding:0px;
+  margin:0px;
+  position:fixed;
+  right:-130px;
+  top:130px;
+  width:210px;
+  z-index: 1100;
+  }
+.sticky li{
+  list-style-type:none;
+  background-color:#112d5b;
+  color: #e2e2e2;
+  height:41px;
+  padding:0px;
+  margin:0px 0px 1px 0px;
+  -webkit-transition:all 0.25s ease-in-out;
+  -moz-transition:all 0.25s ease-in-out;
+  -o-transition:all 0.25s ease-in-out;
+  transition:all 0.25s ease-in-out;
+  cursor:pointer;
+  }
+.sticky li:hover{
+  margin-left:-115px;
+  }
+.sticky li img{
+  float:left;
+  margin:2px 2px;
+  margin-right:5px;
+  }
+.sticky li p{
+  padding-top:5px;
+  margin:0px;
+  line-height:16px;
+  font-size:13px;
+  }
+.sticky li p a{
+  text-decoration:none;
+  color: #e2e2e2;
+  }
+#scores{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Archivo', sans-serif;
+  border-collapse: collapse;
+  margin-top: 40px;
+  }
+#scores th{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  background-color: #1c4997;
+  }
+#scores td{
+  padding: 4px;
+  text-align: center;
+  }
+#scores tr:nth-child(odd){
+  background-color: #1c4997;
+  }
+#scores tr:hover{
+  background-color: #183e81;
+  }
+#sideimage{
+  background-image: url("https://i2-prod.mirror.co.uk/incoming/article7770093.ece/ALTERNATES/s615b/Manchester-United-v-Aston-Villa.jpg");
+  -webkit-filter: opacity(0.1) sepia(.8);
+  background-size: cover;
+  display: block;
+  color: #eaeffa;
+  }
+header{
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  }
+.options{
+  padding-right: 40px;
+  font-size: 20px;
+  }
+.btn-info{
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 300px;
+  color: #112d5b;
+  background-color: #e2e2e2;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Archivo', sans-serif;
+  }
+.btn-info:hover{
+  background-color: #d5dff5;
+  }
+.btn-info:focus,.btn-info:active {
+  background-color: #d5dff5;
+  color: #112d5b;
+  outline: none !important;
+  box-shadow: none;
+  }
+#reveal-options{
+  display: none;
+  }
