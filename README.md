@@ -18,7 +18,7 @@ also provides links to various social media sites, to promote circulation of the
 - As an end user, I want my score to be documented, to see how it compares with others
 - As an end user, I want to be able to challenge my friends to play, to see if they can beat me
 
-Mockups created for this project can be found within the 'planning' folder.
+Mockups and detailed user stories created for this project can be found within the 'planning' folder.
 
 ## Features
 
