@@ -6,7 +6,7 @@ awards them three points for each correct answer. The ultimate goal for the user
 scoring 36 points or more. Once the user has completed the quiz, their final score will be revealed, and they will be able 
 to see where they rank among other players on the leaderboard.
 
-### UX
+## UX
 
 This application was developed for football fans to test their knowledge of obscure facts. I personally know quite a lot of 
 people who are quite competitive when it comes to football knowledge. This application is perfect for these individuals, as 
@@ -20,7 +20,7 @@ also provides links to various social media sites, to promote circulation of the
 
 Mockups created for this project can be found within the 'planning' folder.
 
-### Features
+## Features
 
 - User form: enables users to initiate the quiz and create user instances which are saved in the session, simply by entering a user name
 - Answer input: allows for correct answers with minor discrepancies, such as answers beginning with lower case letters, meaning users don't have to be as attentive
@@ -28,7 +28,7 @@ Mockups created for this project can be found within the 'planning' folder.
 - Leaderboard function: enables users to compare scores, by calculating individual scores and ranking them within the browser
 - Score summary: provides the user with a summary of their performance, based on their final score
 
-### Technologies used
+## Technologies used
 
 Python was used to write the underlying code, including all functions, routes and logic. The project was built inside the Flask 
 framework, which helped display the output from the Python logic. The website was developed upon a basic Bootstrap template found 
@@ -38,7 +38,7 @@ HTML and CSS (see 'style.css') were used to enhance the structure and appearance
 aspects of the game - specifically by revealing the answer options to the user through a slidedown function on click (see 'script.js'). 
 Each page also includes sticky social media sidebars, instructions on how to create which were found online.
 
-### Testing
+## Testing
 
 Both automated and manual tests were conducted to ensure that all features are fully functional. Manual tests were created to make sure 
 that the 'lowercase' and 'strip' functions worked alone and in tandem.Unit tests can be found in the 'unittests' folder, demonstrating 
@@ -56,19 +56,19 @@ development to ensure that pages and functionalities were easy to navigate and u
 The app was extensively tested across a range of browsers across both Windows and Mac operating systems, including Chrome, IE, Firefox, 
 Microsoft Edge, and Opera, using CrossBrowserTesting.com's free service. No bugs or issues were encountered during the testing process.
 
-### Deployment
+## Deployment
 
 This application has been both pushed to Gitub and deployed to Heroku. Config variables have been added to the Heroku dashboard to ensure 
 that the application works. A Procfile and requirements.txt file have also been included for assistance with setting up the app. As data 
 is stored in a csv file, there is have been no complications with regards to databases. There are no differences between the deployed 
 version and the development version stored on Github.
 
-### Credits
+## Credits
 
-## Content
+### Content
 
 The social media sidebar was based on a how to guide by w3schools... https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp
 
-## Media
+### Media
 
 Images used within this project were accessed via a Google search for images labeled for noncommercial reuse.
