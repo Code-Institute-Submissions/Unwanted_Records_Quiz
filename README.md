@@ -60,7 +60,8 @@ Microsoft Edge, and Opera, using CrossBrowserTesting.com's free service. No bugs
 
 This application has been both pushed to Gitub and deployed to Heroku. Config variables have been added to the Heroku dashboard to ensure 
 that the application works. A Procfile and requirements.txt file have also been included for assistance with setting up the app. As data 
-is stored in a csv file, there is have been no complications with regards to databases.
+is stored in a csv file, there is have been no complications with regards to databases. There are no differences between the deployed 
+version and the development version stored on Github.
 
 ### Credits
 
