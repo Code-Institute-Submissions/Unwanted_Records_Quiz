@@ -1,11 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
+<div>
+  <div class="row">
+    <div class="col-12" id="header-image">
+      <!-- Empty for styling purposes -->
+    </div>
+  </div>
+</div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-3 col-md-2 hidden-sm" id="sideimage">
           <!-- Empty for styling purposes -->
         </div>
-        <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="col-lg-6 col-md-8 col-sm-12" id="question">
               <br>
               <div class="prompt">
                 <h3><center>{{ display_question }}</center></h3>
@@ -21,9 +28,8 @@
               </div>
               <br>
               <div class="d-flex justify-content-center">
-                <form method="POST">
-                  <label for="guess">Answer:</label>
-                  <input type="text" id="guess" name="guess" required/>
+                <form method="POST" align="center">
+                  <input type="text" id="input" placeholder="Answer" name="guess" required/>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
               </div>

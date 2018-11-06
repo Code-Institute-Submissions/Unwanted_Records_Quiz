@@ -1,3 +1,5 @@
+# To run tests, enter 'python3 unittests/test_input.py' into the terminal
+
 # Test1 - testing python lowercase function
 
 def test_lower_case(guess, answer):

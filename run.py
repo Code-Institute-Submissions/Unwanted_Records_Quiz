@@ -4,6 +4,7 @@ import operator
 from flask import Flask, render_template, redirect, request, session, url_for, flash
 import quizdata
 
+
 app = Flask(__name__)
 app.secret_key = 'random string'
 
@@ -53,11 +54,9 @@ def index():
         session['logged_in'] = True
         username = request.form["username"]
         return redirect(url_for('quiz'))
-        
     if 'username' in session:
         username = session['username']
         return redirect(url_for('quiz'))
- 
     return render_template("index.html", page_title="Unwanted Premier League records")
 
 
@@ -86,7 +85,7 @@ def quiz():
         guess = request.form["guess"].strip(' \t\n\r').lower()
         correct_answer = quizdata.question_prompts[i]["answer"].strip(' \t\n\r').lower()
         if guess == correct_answer:
-            session['user_score'] = o + 1
+            session['user_score'] = o + 3
             return redirect(url_for('reveal'))
         else:
             return redirect(url_for('reveal'))
@@ -135,7 +134,15 @@ def endquiz():
     """ Informs the user of their score at the end of the quiz """
     username = session['username']
     user_score = session['user_score']
-    display_score = "You scored {0} out of {1}. Check out our leaderboard to see where you rank.".format(user_score, number_of_questions)
+    
+    if user_score >= 36:
+        display_score = "Congratulations! With {0} points you probably would have just about secured Premier League survival. Check out our leaderboard to see where you rank.".format(user_score)
+    elif user_score < 11:
+        display_score = "Oh dear. {0} points would have eclipsed the record for the worst ever Premier League points tally. Take a look to see if you fare any better on our leaderboard.".format(user_score)
+    elif user_score < 25:
+        display_score = "{0} points means guaranteed relegation and a season to forget. Take a look to see if you fare any better on our leaderboard.".format(user_score)
+    else:
+        display_score = "Not bad. It's unlikely that {0} would save you from relegation, but you've avoided setting any unwanted records. Check out our leaderboard to see where you rank.".format(user_score)
     
     if request.method == 'POST':
         update_leaderboard(username, user_score)
@@ -159,7 +166,6 @@ def endquiz():
 def leaderboard():
     """ Ranks all user scores from highest to lowest """
     userscores = sort_scores()
-    
     return render_template("leaderboard.html", page_title="Leaderboard", userscores=userscores)
 
     
